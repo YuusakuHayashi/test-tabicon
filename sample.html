@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link id="icon" rel="icon" href="Avairable.png" type="image/png">
+  </head>
+  <button id="okbutton">Avairable</button>
+  <button id="ngbutton">Disavairable</button>
+  <script>
+    var target = document.getElementById('icon');
+    var okbutton = document.getElementById('okbutton');
+    var ngbutton = document.getElementById('ngbutton');
+
+    //var observer = new MutationObserver(function(mutations) {
+    //  mutation.forEach(function(mutation){
+    //    console.log(mutation.type);
+    //  }); 
+    //});
+
+    //var config = {
+    //  attributes: true, 
+    //  childList: true, 
+    //  characterData: true
+    //};
+
+    ngbutton.addEventListener("click", function(){ 
+      target.setAttribute("href", "Disavairable.png");
+    });
+
+    okbutton.addEventListener("click", function(){ 
+      target.setAttribute("href", "Avairable.png");
+    });
+
+    //observer.observe(target, config);
+
+    //observer.disconnect();
+  </script>
+</html>
